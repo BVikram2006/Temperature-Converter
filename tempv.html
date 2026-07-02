@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="tempv.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🌡️ Temperature Converter</h2>
+    
+    <input type="number" id="temperatureInput" placeholder="Enter temperature" value="25">
+    
+    <div class="double-select">
+        <div class="select-wrapper">
+            <label>📤 FROM</label>
+            <select id="fromUnit">
+                <option value="Celsius">🌡️ Celsius (°C)</option>
+                <option value="Fahrenheit">🔥 Fahrenheit (°F)</option>
+                <option value="Kelvin">❄️ Kelvin (K)</option>
+            </select>
+        </div>
+        
+        <div class="select-wrapper">
+            <label>📥 TO</label>
+            <select id="toUnit">
+                <option value="Celsius">🌡️ Celsius (°C)</option>
+                <option value="Fahrenheit">🔥 Fahrenheit (°F)</option>
+                <option value="Kelvin">❄️ Kelvin (K)</option>
+            </select>
+        </div>
+    </div>
+
+    <button onclick="convertTemperature()" class="convert-btn">⚡ CONVERT</button>
+
+    <div class="result-area" id="resultArea">
+        <p id="result">— °?</p>
+    </div>
+</div>
+
+<script src="tempv.js"></script>
+</body>
+</html>
